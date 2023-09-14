@@ -1,0 +1,25 @@
+// Rose Tran - CS 310
+// Pseudocode for double linear search program
+
+linearSearch(const vector<int> list, key)
+{
+  index = 0 // initial the position
+  count = 0 // count for two first founded values
+  vector<int> searchResult
+  while (index < list_size) 
+  {
+    if list[index] == key
+    {
+      searchResult.push_back(index)
+      count = count + 1  // update count
+      if count == 2
+      {
+        return searchResult // return index and stop the program
+      }
+    }
+    index = index + 1
+  }
+  clear the searchResult // empty the vector if not found two first indexs
+  searchResult.push_back(-1)
+  return searchResult
+}
